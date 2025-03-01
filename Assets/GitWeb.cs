@@ -39,8 +39,10 @@ public class WebSocketGitEditor : EditorWindow
         {
             RunGitCommand("add .");
             RunGitCommand($"commit -m \"{commitMessage}\"");
-            RunGitCommand("pull origin main --rebase");
-            RunGitCommand("push origin main");
+            RunGitCommand("fetch origin"); // Fetch the latest changes without merging
+            RunGitCommand("rebase origin/main"); // Rebase your commits on top of the remote changes
+            RunGitCommand("push origin main"); // Push your changes to the remote repository
+
         }
         
         //if (GUILayout.Button("Pull from GitHub")) 

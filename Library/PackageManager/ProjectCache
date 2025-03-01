@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638764403200000000
+      ticks: 638764606050000000
     m_Hash: 1135893286
   m_LockFileStatus:
     m_FilePath: /Users/Jacob/Documents/Unity/Sync Test/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638764403210000000
+      ticks: 638764606050000000
     m_Hash: 3276493213
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
