@@ -41,6 +41,7 @@ public class WebSocketGitEditor : EditorWindow
             RunGitCommand($"commit -m \"{commitMessage}\"");
             RunGitCommand("pull origin main --rebase");
             RunGitCommand("push origin main");
+            AssetDatabase.Refresh();
 
         }
         
