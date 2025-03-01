@@ -39,9 +39,8 @@ public class WebSocketGitEditor : EditorWindow
         {
             RunGitCommand("add .");
             RunGitCommand($"commit -m \"{commitMessage}\"");
-            RunGitCommand("push origin main --rebase");
-            RunGitCommand("push origin main --rebase");
-
+            RunGitCommand("pull origin main --rebase");
+            RunGitCommand("push origin main");
 
         }
         
