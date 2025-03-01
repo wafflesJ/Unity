@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: com.spoiledcat.git.ui:Unity.VersionControl.Git:GitLogCache
   cacheType: 3
-  lastUpdatedAtString: 2025-02-28T21:07:59.870-05:00
-  initializedAtString: 2025-02-28T21:07:58.763-05:00
+  lastUpdatedAtString: 2025-03-01T10:38:28.871-05:00
+  initializedAtString: 2025-03-01T10:38:28.871-05:00
   log: []

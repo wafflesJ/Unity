@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: com.spoiledcat.git.ui:Unity.VersionControl.Git:GitUserCache
   cacheType: 8
-  lastUpdatedAtString: 2025-03-01T10:19:07.762-05:00
+  lastUpdatedAtString: 2025-03-01T10:38:29.061-05:00
   initializedAtString: 2025-03-01T10:19:07.762-05:00
-  gitName: Jacob
+  gitName: WafflesJ
   gitEmail: jacobsamuelmills7@gmail.com
