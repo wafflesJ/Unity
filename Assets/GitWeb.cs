@@ -37,20 +37,11 @@ public class WebSocketGitEditor : EditorWindow
         
         if (GUILayout.Button("Sync Files"))
         {
-            // Stage your changes
-RunGitCommand("add .");
+            RunGitCommand("add .");
+            RunGitCommand($"commit -m \"{commitMessage}\"");
+            RunGitCommand("push origin main --rebase");
+            RunGitCommand("push origin main --rebase");
 
-// Commit your changes
-RunGitCommand($"commit -m \"{commitMessage}\"");
-
-// Fetch the latest changes from the remote (without merging them yet)
-RunGitCommand("fetch origin");
-
-// Merge the latest changes from the remote (main branch) into your local branch
-RunGitCommand("merge origin/main");
-
-// Push your local changes to the remote repository
-RunGitCommand("push origin main");
 
         }
         
