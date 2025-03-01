@@ -40,7 +40,7 @@ public class WebSocketGitEditor : EditorWindow
             RunGitCommand("add .");
             RunGitCommand($"commit -m \"{commitMessage}\"");
             RunGitCommand("fetch origin"); // Fetch the latest changes without merging
-            RunGitCommand("rebase origin/main"); // Rebase your commits on top of the remote changes
+            RunGitCommand("rebase origin main"); // Rebase your commits on top of the remote changes
             RunGitCommand("push origin main"); // Push your changes to the remote repository
 
         }
