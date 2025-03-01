@@ -1,0 +1,6 @@
+[Ll]ibrary/
+[Tt]emp/
+.obj/
+.vs/
+.idea/
+.DS_Store
