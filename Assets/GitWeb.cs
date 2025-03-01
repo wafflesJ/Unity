@@ -35,14 +35,15 @@ public class WebSocketGitEditor : EditorWindow
         GUILayout.Label("Git Version Control", EditorStyles.boldLabel);
         commitMessage = EditorGUILayout.TextField("Commit Message", commitMessage);
         
-        if (GUILayout.Button("Commit & Push"))
+        if (GUILayout.Button("Sync Files"))
         {
             RunGitCommand("add .");
             RunGitCommand($"commit -m \"{commitMessage}\"");
+            RunGitCommand("pull origin main --rebase");
             RunGitCommand("push origin main");
         }
         
-        if (GUILayout.Button("Pull from GitHub")) RunGitCommand("pull origin main --rebase");
+        //if (GUILayout.Button("Pull from GitHub")) 
     }
 
     private static void ConnectToWebSocket()
