@@ -95,9 +95,9 @@ public class WebSocketGitEditor : EditorWindow
 
         using (Process process = Process.Start(startInfo))
         {
-            //UnityEngine.Debug.Log(process.StandardOutput.ReadToEnd());
+            UnityEngine.Debug.Log(process.StandardOutput.ReadToEnd());
             string error = process.StandardError.ReadToEnd();
-            //if (!string.IsNullOrEmpty(error)) UnityEngine.Debug.LogError(error);
+            if (!string.IsNullOrEmpty(error)) UnityEngine.Debug.LogError(error);
         }
     }
 }
