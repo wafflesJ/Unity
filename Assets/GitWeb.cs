@@ -42,7 +42,7 @@ public class WebSocketGitEditor : EditorWindow
             RunGitCommand("push origin main");
         }
         
-        if (GUILayout.Button("Pull from GitHub")) RunGitCommand("pull origin main");
+        if (GUILayout.Button("Pull from GitHub")) RunGitCommand("pull origin main --rebase");
     }
 
     private static void ConnectToWebSocket()
