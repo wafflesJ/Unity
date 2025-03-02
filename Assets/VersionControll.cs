@@ -139,6 +139,7 @@ public class InitializeWindow : EditorWindow
             WebSocketGitEditor.RunGitCommand($"config --global user.email \"{email}\"");
             WebSocketGitEditor.RunGitCommand($"config --global user.password \"{personalAccessToken}\"");
             // Push with authentication
+            WebSocketGitEditor.RunGitCommand("pull origin main --rebase");
             WebSocketGitEditor.RunGitCommand("push -u origin main");
         }
 
